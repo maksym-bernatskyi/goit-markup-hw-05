@@ -212,9 +212,8 @@ ul {
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 1600px;
+  height: 1024px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -260,12 +259,18 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .icon-close {
   width: 18px;
   height: 18px;
   fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .icon-close {
+  fill: var(--accent-color);
 }
 /* ---------benefits------------ */
 .benefits {
@@ -474,7 +479,7 @@ ul {
   background-color: var(--primary-white-color);
 }
 .clients-icon {
-  fill: var(--secondary-text-color);
+  fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link {
